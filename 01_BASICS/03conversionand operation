@@ -1,0 +1,64 @@
+let score="33"
+//convert the score from string or any type to number 
+console.log(typeof score)
+let valuenumber= Number(score)
+console.log(typeof valuenumber)
+console.log( valuenumber)
+// suppose the value of score is a string which cannot be converted into a number then the Number funcn will not give error it will give "NaN" and type will show number only so keep this in mind 
+// "33abc"-> NaN
+// "arbaaz"-> NaN
+//null -> 0
+// undefined-> NaN
+// boolean - true ->1   ; false->0
+let bool = 1
+let boolconvert = Boolean(bool)// converts 1 to true and 0 to false 
+console.log(boolconvert)// true
+console.log(typeof boolconvert) //boolean
+//1=> true
+//0=>false
+//"" empty string => false 
+//"arbaaz" => true
+let stringvalue =33
+let stringconvert=String(stringvalue)
+console.log(stringconvert)// string 33
+console.log(typeof stringconvert);//string
+console.log(typeof stringvalue);//number
+//*********operation*********** */
+console.log(2+2);
+console.log(2-2);
+console.log(2*5);
+console.log(2**5);//power
+console.log(2/3);
+console.log(2%3);//remainder
+let str1="hello"
+let str2=" whats up!!"
+let str3=str1+str2;
+console.log(str3);
+console.log(1 + "2");//12
+console.log("1"+2);//12
+console.log(1 +"2"+3);//it will treat 2 and 3 as string 123
+console.log("1"+2+2);//as first term 1 is string it will treat all numbers as string 122
+console.log(1+"2");//12
+console.log(true);
+console.log(+true);//convert into number 1
+console.log(+false);//0
+let value=23
+let negvalue=-value;
+console.log(negvalue);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

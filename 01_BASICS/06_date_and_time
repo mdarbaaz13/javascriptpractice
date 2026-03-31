@@ -1,0 +1,25 @@
+let tareekh = new Date()
+console.log(tareekh)//format is not readable 2026-03-31T18:21:37.375Z
+console.log(tareekh.toString())
+console.log(tareekh.toLocaleString())
+//you give custom date as well 
+let tareekh1=new Date(2023 ,0 ,3)
+console.log(tareekh1.toString())//Tue Jan 03 2023 00:00:00 GMT+0000 (Coordinated Universal Time) in this when u represent month with single digit the month starts from 0, ie 0-> jan ;
+let tareekh2=new Date(2023 ,0 ,3,6,2,1)// the next numbers will be considered as time 
+console.log(tareekh2.toString())
+let tareekh3=new Date("2023-03-18")
+console.log(tareekh3.toString())
+let tareekh4=new Date("03-18=2017")
+console.log(tareekh4.toString())
+let timestamp = Date.now()
+console.log(timestamp)//it gives the miliseconds value from the creation of javascript that is somwhere in 1970 "1774981808932"
+//suppose u want to compare two dates which is first or last so u can calculate the seconds from that date to current date and compare 
+let newtareekh = new Date("03-13-2005")
+console.log(newtareekh.getTime())// this will give mili seconds from 13-03-2005 to present date 1110672000000
+// u can convert mili seconds to seconds by / it by 1000
+console.log(Date.now()/1000)// but it will give decimal value so get round use maths funcn floor 1774982159.371 -- 1774982159
+console.log(Math.floor(Date.now()/1000))
+let newtareekh1 = new Date()
+console.log(newtareekh1.toLocaleString('default',{
+    weekday:'long'
+}))//locale string is vast u can customize the datatype or type of output 

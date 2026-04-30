@@ -4,12 +4,28 @@
     <head>
         <meta charset="UTF-8">
         <title>DOM learning </title>
+        <style>
+            .big-black{
+                background-color:  #212122;
+                color: aqua;
+            }
+        </style>
 
     </head>
-    <body>
-        <div class="big-black">
-        <h1 id="title">Heloo world document object model</h1>
+    <body class="big-black">
+        <div >
+        <h1 id="title" class="heading">Heloo world document object model<span style="display: none;">test text </span></h1><!--here when u use textcontent it will display entire thing including span as well which is hidden using display=nome styling but whereas if u use innertext then it will only give Heloo world document object model and not the span part because it is hidden it gives only whatever is displayed on the page -->
+        <h2>hello</h2>
+        <h2>whatsup!!!!</h2>
+        <h2>where are u ????</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et autem non neque impedit fuga. Unde possimus perferendis a aliquam magni, magnam exercitationem! Natus fuga aspernatur, qui eaque dolorum corporis sunt.</p>
+        <input type="password"> 
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
         </div>
         
         
@@ -17,3 +33,34 @@
 
     </body>
 </html>
+<!--document
+#document (https://silver-potato-q7j95j5qjjp24pg6-5500.app.github.dev/04_DOM/01_dombasics.html)#top-layer
+document.getElementById
+ƒ getElementById() { [native code] }
+document.getElementById('title')
+<h1 id=​"title" class=​"test">​Heloo world document object model​</h1>​
+document.getElementByC('title')
+VM294:1 Uncaught TypeError: document.getElementByC is not a function
+    at <anonymous>:1:10
+(anonymous) @ VM294:1Understand this error
+document.getElementsByClassName('big-black')
+HTMLCollection [body.big-black]0: body.big-blacklength: 1[[Prototype]]: HTMLCollection
+document.getElementById('title').class
+undefined
+document.getElementById('title').className
+'heading'
+document.getElementById('title').id
+'title'
+document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').setAttribute('id',test)
+VM492:1 Uncaught ReferenceError: test is not defined
+    at <anonymous>:1:52
+(anonymous) @ VM492:1Understand this error
+document.getElementById('title').setAttribute('class',test)
+VM504:1 Uncaught ReferenceError: test is not defined
+    at <anonymous>:1:55
+(anonymous) @ VM504:1Understand this error
+document.getElementById('title').setAttribute('class','test') this has changed the attribute class value to test -->

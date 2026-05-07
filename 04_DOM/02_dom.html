@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>dom2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color: #212122; color:#ffff
+    ">
+        <div class="parent">
+            <div class="day"> monday</div>
+            <div class="day"> tuesday</div>
+            <div class="day"> wednesday</div>
+            <div class="day"> thursday</div>
+            <div class="day"> friday</div>
+            <div class="day"> saturday</div>
+            <div class="day"> sunday</div>
+        </div>
+    </body>
+</html>
+<!--parent.children
+HTMLCollection(7) [div.day, div.day, div.day, div.day, div.day, div.day, div.day]0: div.day1: div.day2: div.day3: div.day4: div.day5: div.day6: div.daylength: 7[[Prototype]]: HTMLCollection the parent.children returns a html collection 
+for (let i = 0; i < parent.children.length; i++) {
+    console.log(parent.children[i].innerHTML);
+}
+    
+VM855:2  monday
+VM855:2  tuesday
+VM855:2  wednesday
+VM855:2  thursday
+VM855:2  friday
+VM855:2  saturday
+VM855:2  sunday
+undefined u can use for loop to traverse the html collection -->
+<!--const days=document.querySelector('.day')
+undefined
+days
+days.parentElement
+days.nextElementSibling
+parentselector.childNodes
+undefined
+parent.childNodes
+NodeList(15) [text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text]
+0
+: 
+text
+1
+: 
+div.day
+2
+: 
+text
+3
+: 
+div.day
+4
+: 
+text
+5
+: 
+div.day
+6
+: 
+text
+7
+: 
+div.day
+8
+: 
+text
+9
+: 
+div.day
+10
+: 
+text
+11
+: 
+div.day
+12
+: 
+text
+13
+: 
+div.day
+14
+: 
+text
+length
+: 
+15
+[[Prototype]]
+: 
+NodeList parent.childNodes will give a nodelist where each div is counted one node and the text is also counted as one node the linebreaks are also node elements ie nextline -->

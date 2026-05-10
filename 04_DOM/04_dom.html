@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>dom3</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color: #212122; color:#ffff
+    ">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+
+    </body>
+    <script>
+        function addlanguage(langName){
+            const li=document.createElement('li');
+            li.innerHTML=`${langName}`
+            document.querySelector('.language').appendChild(li);
+        }
+        addlanguage('python')
+        addlanguage('C++')
+        function addoptilanguage(langName){
+            const li=document.createElement('li');
+            li.appendChild(document.createTextNode(`${langName}`))
+            document.querySelector('.language').appendChild(li);
+        }
+        addoptilanguage('golang');
+        //edit
+        const secondLang=document.querySelector("li:nth-child(2)")
+        console.log(secondLang)
+        const newli=document.createElement('li')
+        newli.textContent='mojo'
+        secondLang.replaceWith(newli)
+        //edit
+        const firstlang=document.querySelector('li:first-child')
+        firstlang.innerHTML='HTML'
+        //remove
+        const removal=document.querySelector('li:last-child')
+        removal.remove()//deleted the li element
+
+    </script>
+    <!-- with the function defination and append function it has to traverse the entire DOM tree every time the function is called which is not an optimised approach
+     in second language u created a new li element and replaced that li element with the old one 
+     but in the firstlang u directly changed the textcontent of ur previous li only  -->

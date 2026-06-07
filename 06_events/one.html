@@ -33,7 +33,7 @@
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
-    // }, false)
+    // }, false)//this false is an event propogation term how ur event should propogate --> false means event bubling like concentric bubbles from inner to outer and "when u write trueit means event capturing  it goes from outer to inner first the images and then the owl
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
@@ -61,3 +61,8 @@
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
+<!--Async is a very vast concept it has callbacks,callback hell, promise ,promise chaining and then finally async and await the best order is async>promise chaining>callback hell 
+callback is basic nested functions calling again and again then u have promise where u have resolve and reject .then((res)=>{}) is used for resolve and .catch((err)=>{}) is used for reject. promise chaining is .then() nested. every API return a new promise (promise(resolve,reject)=>{
+    console.log("hello")
+    resolve("success") this is returned and caught by .then() 
+}) then u have concept of async and await where if u write keyword async before any function it becomes async funcn and returns a promise . await is written before the function call of the required function it pauses all other executions and executes only the current call .await can only be  written inside async without async funcn u cant write await -->
